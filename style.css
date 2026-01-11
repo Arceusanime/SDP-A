@@ -1,0 +1,210 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+  font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.logo-img {
+  width: 180px;
+  height: auto;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.25);
+}
+
+
+/* =========================
+   NAVBAR IMAGE LOGO
+========================= */
+
+/* FORCE NAVBAR LOGO SIZE */
+.navbar .navbar-logo-img {
+  width: 80px !important;
+  height: 80px !important;
+  max-width: 80px !important;
+  max-height: 80px !important;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(13, 110, 253, 0.35);
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.nav-link {
+  color: #495057;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+  color: #0d6efd;
+}
+
+.nav-link.active {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.card.shadow-sm {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+.table th {
+  font-weight: 600;
+  color: #495057;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+/* =========================
+   ALERTS
+========================= */
+
+.alert {
+  border-radius: 8px;
+}
+
+/* =========================
+   RESPONSIVE TWEAKS
+========================= */
+
+@media (max-width: 768px) {
+  .vh-100 {
+    height: auto !important;
+  }
+}
+
+/* =========================
+   LANDING PAGE CAROUSEL
+========================= */
+
+.carousel-wrapper {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+  background: #ffffff;
+  padding: 25px 0;
+  /* box-shadow:
+    0 -6px 15px rgba(13, 110, 253, 0.15),
+    0 6px 15px rgba(13, 110, 253, 0.15); */
+  border-radius: 12px;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(350px * 6);
+  animation: scrollCarousel 18s linear infinite;
+}
+
+.carousel-item-custom {
+  width: 300px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 30px 20px;
+  text-align: center;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.08); */
+}
+
+.carousel-item-custom i {
+  font-size: 48px;
+  color: #6c757d; /* grey */
+}
+
+.carousel-item-custom h5 {
+  margin-top: 15px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* Animation */
+@keyframes scrollCarousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover (nice UX) */
+.carousel-wrapper:hover .carousel-track {
+  animation-play-state: paused;
+}
