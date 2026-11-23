@@ -54,7 +54,8 @@ a {
 ========================= */
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: whitesmoke !important;
+  box-shadow: 0 4px 22px rgba(23, 162, 236, 0.08) !important;
 }
 
 .nav-link {
@@ -83,7 +84,7 @@ a {
 }
 
 .card.shadow-sm {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+  box-shadow: 0 4px 12px rgba(4, 165, 252, 0.08) !important;
 }
 
 /* =========================
